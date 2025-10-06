@@ -3,6 +3,7 @@
   "description": "CentralAuth OAuth 2.0 provider for league/oauth2-client",
   "type": "library",
   "license": "MIT",
+  "version": "1.0.0",
   "keywords": [
     "oauth2",
     "centralauth",
