@@ -1,0 +1,24 @@
+{
+  "name": "centralauth/oauth2-centralauth",
+  "description": "CentralAuth OAuth 2.0 provider for league/oauth2-client",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "oauth2",
+    "centralauth",
+    "authentication",
+    "sso"
+  ],
+  "require": {
+    "php": ">=7.4",
+    "league/oauth2-client": "^2.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "CentralAuth\\OAuth2\\Client\\": "src/"
+    }
+  },
+  "support": {
+    "source": "https://github.com/your-org/oauth2-centralauth"
+  }
+}
