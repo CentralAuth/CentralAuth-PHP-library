@@ -56,9 +56,9 @@ $provider = new CentralAuth([
   'clientId' => getenv('CENTRALAUTH_CLIENT_ID'),
   'clientSecret' => getenv('CENTRALAUTH_CLIENT_SECRET'),
   'redirectUri' => 'https://your-app.example/oauth/callback',
-  'authorization_url' => 'https://central.example.com/login',
-  'token_url' => 'https://central.example.com/api/v1/verify',
-  'resource_owner_details_url' => 'https://central.example.com/api/v1/userinfo'
+  'authorization_url' => 'https://centralauth.com/login',
+  'token_url' => 'https://centralauth.com/api/v1/verify',
+  'resource_owner_details_url' => 'https://centralauth.com/api/v1/userinfo'
 ]);
 
 if (!isset($_GET['code'])) {
@@ -159,6 +159,11 @@ $authUrl  = $provider->getAuthorizationUrl();
 $token    = $provider->getAccessToken('authorization_code', ['code' => $_GET['code']]);
 $user     = $provider->getResourceOwner($token)->toArray();
 ```
+
+---
+
+## 📚 Documentation
+For complete CentralAuth documentation and API reference, visit the [official docs](https://docs.centralauth.com).
 
 ---
 
