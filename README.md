@@ -164,7 +164,3 @@ $user     = $provider->getResourceOwner($token)->toArray();
 
 ## 📚 Documentation
 For complete CentralAuth documentation and API reference, visit the [official docs](https://docs.centralauth.com).
-
----
-
-Questions or suggestions? Open an issue – feedback welcome.
