@@ -83,7 +83,7 @@ class CentralAuth extends AbstractProvider
     $authHeader = 'Basic ' . base64_encode($this->clientId . ':' . $this->clientSecret);
     $headers = [
       'Authorization' => $authHeader,
-      'auth-ip' => $_SERVER['REMOTE_ADDR'] ?? '127.0.0.1',
+      'auth-ip' => $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['HTTP_X_REAL_IP'] ?? $_SERVER['REMOTE_ADDR'],
       'user-agent' => $_SERVER['HTTP_USER_AGENT'] ?? 'CentralAuth-OAuth2-Client'
     ];
     $request = $this->getRequest(self::METHOD_POST, $url, [
