@@ -34,15 +34,15 @@ composer require centralauth/oauth2-centralauth
 ---
 
 ## 🔧 Configuration Options
-| Option                       | Required | Description                                                             |
-| ---------------------------- | -------- | ----------------------------------------------------------------------- |
-| `clientId`                   | Yes      | CentralAuth OAuth client ID                                             |
-| `clientSecret`               | Yes      | CentralAuth OAuth client secret                                         |
-| `redirectUri`                | Yes      | Your app callback URL (must match configured value)                     |
-| `authorization_url`          | Yes      | CentralAuth login/authorization endpoint                                |
-| `token_url`                  | Yes      | CentralAuth token/verify endpoint                                       |
-| `resource_owner_details_url` | Yes      | CentralAuth user info endpoint                                          |
-| `domain`                     | No       | Overrides domain passed as `?domain=` (defaults to `authorization_url`) |
+| Option                       | Required | Description                                                        |
+| ---------------------------- | -------- | ------------------------------------------------------------------ |
+| `client_id`                  | Yes      | CentralAuth OAuth client ID                                        |
+| `client_secret`              | Yes      | CentralAuth OAuth client secret                                    |
+| `redirect_uri`               | Yes      | Your app callback URL (must match configured value)                |
+| `authorization_url`          | Yes      | CentralAuth login/authorization endpoint                           |
+| `token_url`                  | Yes      | CentralAuth token/verify endpoint                                  |
+| `resource_owner_details_url` | Yes      | CentralAuth user info endpoint                                     |
+| `domain`                     | No       | Overrides domain passed as `?domain=` (defaults to `redirect_uri`) |
 
 ---
 
