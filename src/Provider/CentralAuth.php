@@ -61,7 +61,7 @@ class CentralAuth extends AbstractProvider
     $this->baseAuthorizeUrl = $options['authorization_url'] ?? $options['urlAuthorize'] ?? '';
     $this->baseTokenUrl = $options['token_url'] ?? $options['urlAccessToken'] ?? '';
     $this->resourceOwnerDetailsUrl = $options['resource_owner_details_url'] ?? $options['urlResourceOwnerDetails'] ?? '';
-    $this->domain = $options['domain'] ?? $options['redirectUri'] ?? $options['redirect_uri'];
+    $this->domain = $options['domain'] ?? null;
 
     parent::__construct([
       'clientId' => $options['clientId'] ?? $options['client_id'] ?? '',

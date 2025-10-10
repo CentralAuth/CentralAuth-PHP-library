@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/home/westerhof/CentralAuth-PHP-library/phpunit.xml" tests="7" assertions="30" errors="0" failures="0" skipped="0" time="0.004569">
+    <testsuite name="Integration Tests" tests="7" assertions="30" errors="0" failures="0" skipped="0" time="0.004569">
+      <testsuite name="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" tests="7" assertions="30" errors="0" failures="0" skipped="0" time="0.004569">
+        <testcase name="testCompleteAuthorizationFlow" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="49" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="8" time="0.003349"/>
+        <testcase name="testAuthorizationUrlWithCustomParameters" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="131" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="4" time="0.000109"/>
+        <testcase name="testProviderWithoutDomain" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="148" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="2" time="0.000450"/>
+        <testcase name="testResourceOwnerDetailsUrlGeneration" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="72" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="1" time="0.000078"/>
+        <testcase name="testResourceOwnerCreation" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="81" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="8" time="0.000251"/>
+        <testcase name="testTokenExpiration" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="114" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="2" time="0.000152"/>
+        <testcase name="testFullWorkflowUrlGeneration" file="/home/westerhof/CentralAuth-PHP-library/tests/Integration/CentralAuthIntegrationTest.php" line="163" class="CentralAuth\OAuth2\Client\Test\Integration\CentralAuthIntegrationTest" classname="CentralAuth.OAuth2.Client.Test.Integration.CentralAuthIntegrationTest" assertions="5" time="0.000179"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

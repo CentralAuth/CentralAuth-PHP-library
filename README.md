@@ -140,6 +140,43 @@ try {
 ```
 
 ---
+
+## 🧪 Testing
+
+This library includes comprehensive PHPUnit tests covering all functionality:
+
+### Quick Test Validation
+For a quick syntax and structure check:
+```bash
+./test-runner.sh
+```
+
+### Test Commands
+```bash
+# Run all tests (44 tests, fast and clean)
+composer test
+
+# Run only unit tests (37 tests)
+composer test-unit
+
+# Run only integration tests (7 tests)  
+composer test-integration
+
+# Generate coverage report (requires Xdebug or PCOV)
+composer test-coverage
+```
+
+### Test Coverage
+The test suite includes:
+- **Unit tests**: Individual class and method testing (CentralAuth, CentralAuthResourceOwner)
+- **Integration tests**: Complete OAuth2 workflow testing  
+- **Error handling**: Various error scenarios and edge cases
+- **No external dependencies**: All HTTP calls are mocked for reliable testing
+
+For detailed testing instructions, see [TESTING.md](TESTING.md).
+
+---
+
 ## 🛡 Security
 Do NOT publish real credentials in code or VCS.
 Report vulnerabilities privately.
