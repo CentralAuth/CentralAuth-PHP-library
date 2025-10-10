@@ -6,11 +6,16 @@
 
 >A lightweight, focused OAuth 2.0 provider for integrating CentralAuth with the PHP League's [`league/oauth2-client`](https://github.com/thephpleague/oauth2-client). It wraps CentralAuth-specific behavior so your application code stays clean and portable.
 
+--- 
+
+## 🎯 Live Demo
+A demo implementation is available at [https://php-example.centralauth.com](https://php-example.centralauth.com) ([source code](https://github.com/CentralAuth/CentralAuth-PHP-example)).
+
 ---
 
 ## ✨ Features
 * Authorization Code flow (incl. PKCE support inherited from base library)
-* CentralAuth-specific user info retrieval (POST + raw access token body)
+* CentralAuth-specific user info retrieval
 * Automatic Basic auth header for user info (clientId:clientSecret)
 * Adds `?domain=` query parameter to user info endpoint
 * Custom headers automatically included: `auth-ip`, `user-agent`
@@ -85,11 +90,6 @@ $user = $resourceOwner->toArray();
 
 ---
 
-## 🔐 PKCE (Optional)
-PKCE is supported automatically through `league/oauth2-client`. Before calling `getAuthorizationUrl()`, you can control PKCE method by subclassing or configuring the base provider (see League docs). This provider does not override PKCE handling – it just inherits it.
-
----
-
 ## 🧠 Why Not `GenericProvider`?
 CentralAuth requires a **non-standard user info retrieval pattern**:
 1. HTTP Method: `POST`
@@ -148,17 +148,6 @@ Report vulnerabilities privately.
 
 ## 📄 License
 Released under the [MIT License](LICENSE).
-
----
-
-## 🗺 At a Glance (Cheat Sheet)
-```php
-$provider = new CentralAuth([...]);
-$authUrl  = $provider->getAuthorizationUrl();
-// redirect user -> callback -> exchange code
-$token    = $provider->getAccessToken('authorization_code', ['code' => $_GET['code']]);
-$user     = $provider->getResourceOwner($token)->toArray();
-```
 
 ---
 
