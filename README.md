@@ -24,10 +24,10 @@ A demo implementation is available at [https://php-example.centralauth.com](http
 ---
 
 ## ✅ Requirements
-| Component            | Version             |
-| -------------------- | ------------------- |
-| PHP                  | 8.1+                |
-| league/oauth2-client | ^2.8                |
+| Component            | Version |
+| -------------------- | ------- |
+| PHP                  | 8.1+    |
+| league/oauth2-client | ^2.8    |
 
 ---
 

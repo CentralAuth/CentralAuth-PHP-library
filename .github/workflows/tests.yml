@@ -30,6 +30,9 @@ jobs:
     - name: Validate composer.json
       run: composer validate --strict
     
+    - name: Update Composer lock file
+      run: composer update --lock --no-install
+    
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v4
