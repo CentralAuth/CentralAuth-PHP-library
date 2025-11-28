@@ -26,7 +26,7 @@ A demo implementation is available at [https://php-example.centralauth.com](http
 ## ✅ Requirements
 | Component            | Version             |
 | -------------------- | ------------------- |
-| PHP                  | 7.4+ (works on 8.x) |
+| PHP                  | 8.1+                |
 | league/oauth2-client | ^2.8                |
 
 ---
