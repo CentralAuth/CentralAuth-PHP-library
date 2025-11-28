@@ -32,7 +32,7 @@ jobs:
     
     - name: Cache Composer packages
       id: composer-cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: vendor
         key: ${{ runner.os }}-php-${{ matrix.php-version }}-${{ hashFiles('**/composer.lock') }}
@@ -47,7 +47,7 @@ jobs:
     
     - name: Upload test results
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-results-php-${{ matrix.php-version }}
         path: build/logs/junit.xml
@@ -70,7 +70,7 @@ jobs:
     
     - name: Cache Composer packages
       id: composer-cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         path: vendor
         key: ${{ runner.os }}-php-8.2-${{ hashFiles('**/composer.lock') }}
@@ -84,7 +84,8 @@ jobs:
       run: vendor/bin/phpunit --coverage-clover coverage.xml
     
     - name: Upload coverage to artifacts
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: coverage-report
         path: coverage.xml
+        if-no-files-found: warn
